@@ -27,8 +27,10 @@ public class AhaApp {
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.0.0");
 		capabilities.setCapability(MobileCapabilityType.PLATFORM, Platform.ANDROID);
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "FA6B30300082"); //Pixel FA6B30300082 -- Samsung 4df1b7b052888f8b
 		//capabilities.setCapability(MobileCapabilityType.UDID, "YT91165DPG");
+		capabilities.SetCapability("automationName", "uiautomator2");
 		//capabilities.setCapability("app", app.getAbsolutePath());
 		capabilities.setCapability("appPackage", "com.honda.hondalink");		
 		capabilities.setCapability("appActivity", "com.honda.hir.HIRMain");		
