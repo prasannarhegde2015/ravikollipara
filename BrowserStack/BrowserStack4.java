@@ -27,7 +27,7 @@ public class BrowserStack4 {
 		caps.setCapability("build", "First build");
 		caps.setCapability("name", "single_appium_test");
 		caps.setCapability("realMobile", true);
-		caps.setCapability("device", "Google Pixel");
+	//	caps.setCapability("device", "Google Pixel");
 		caps.setCapability("device", "Samsung Galaxy S7");
 		// "galaxy_s7": { "device": "Samsung Galaxy S7"
 		System.out.println("-------------------------Test Started-----------------------------------");
