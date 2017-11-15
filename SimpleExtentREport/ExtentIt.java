@@ -19,30 +19,37 @@ public class ExtentIt {
 		
 		String[] arrcolvalues = colvals.split(";");
 		String  tcdesc = arrcolvalues[0].trim();
-		String  strexp = arrcolvalues[1].trim();
-		String  stract = arrcolvalues[2].trim();
-		String  status = arrcolvalues[3].trim();
+		String  strfld = arrcolvalues[1].trim();
+		String  strexp = arrcolvalues[2].trim();
+		String  stract = arrcolvalues[3].trim();
+		String  status = arrcolvalues[4].trim();
 
 		if (status.equalsIgnoreCase("pass"))
 		{
 			String imgpath = System.getProperty("user.dir") + "\\Report\\"+screenshot_path;
 			this.CaptureScreesnhot(drv, imgpath);
 			String image= logger.addScreenCapture(imgpath);
-			logger.log(LogStatus.PASS, tcdesc+ ": Expected Result- "+strexp+" : Actual Result-"+stract, image);
+			logger.log(LogStatus.PASS, tcdesc+ ": Field Name- "+strfld+" Expected Result- "+strexp+" : Actual Result-"+stract, image);
 		}
 		else if (status.equalsIgnoreCase("fail"))
 		{
 			String imgpath = System.getProperty("user.dir") + "\\Report\\"+screenshot_path;
 			this.CaptureScreesnhot(drv, imgpath);
 			String image= logger.addScreenCapture(imgpath);
-			logger.log(LogStatus.FAIL, tcdesc+ ": Expected Result- "+strexp+" : Actual Result-"+stract, image);
+			logger.log(LogStatus.FAIL, tcdesc+ ": Field Name- "+strfld+" Expected Result- "+strexp+" : Actual Result-"+stract, image);
 		}
 		else if (status.equalsIgnoreCase("info"))
 		{
-			logger.log(LogStatus.INFO, tcdesc);
+			String imgpath = System.getProperty("user.dir") + "\\Report\\"+screenshot_path;
+			this.CaptureScreesnhot(drv, imgpath);
+			String image= logger.addScreenCapture(imgpath);
+			logger.log(LogStatus.INFO, tcdesc+ ": Field Name- "+strfld+" Expected Result- "+strexp+" : Actual Result-"+stract, image);
 		}
 		else if (status.equalsIgnoreCase("warn"))
 		{
+			String imgpath = System.getProperty("user.dir") + "\\Report\\"+screenshot_path;
+			this.CaptureScreesnhot(drv, imgpath);
+			String image= logger.addScreenCapture(imgpath);
 			logger.log(LogStatus.WARNING, tcdesc);
 		}
 
