@@ -19,3 +19,5 @@ select Well.welWellName as "WellName",  wdaOilRateAllocated ,wdaWaterRateAllocat
 0.1589873 * (WellDailyAverage.wdaOilRateAllocated + WellDailyAverage.wdaWaterRateAllocated) as "LiquidRate_Metric",
 
 WellDailyAverage.wdaStartDate, WellDailyAverage.wdaEndDate from   WellDailyAverage inner join Well on Well.welPrimaryKey = WellDailyAverage.wdaFK_Well where well.welWellName in ('NF_001','NF_002')
+--Welltest
+select * from WellTest  inner join Well on Well.welPrimaryKey = WellTest.tstFK_Assembly where Well.welWellName ='ESPWELL_00001'
