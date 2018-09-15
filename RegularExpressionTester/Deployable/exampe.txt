@@ -1,0 +1,4 @@
+Sample Regular Expression Test
+
+String:    Current 12/12/2018 23:45:34 PM
+Patterrn : (\d{1,2}\/)+\d{1,4}\s+(\d{1,2}\:?)+\s(AM|PM)
