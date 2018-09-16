@@ -2,3 +2,8 @@ Sample Regular Expression Test
 
 String:    Current 12/12/2018 23:45:34 PM
 Patterrn : (\d{1,2}\/)+\d{1,4}\s+(\d{1,2}\:?)+\s(AM|PM)
+
+
+
+String:  Current Date : 16-Sep-2018
+Patterrn : (\d{1,2})+\-([A-Za-z]){3,}\-\d{4}$
