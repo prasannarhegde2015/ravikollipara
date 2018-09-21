@@ -1,1 +1,23 @@
 //li[contains(.,'FORESITE') and contains(.,'UIS')]
+
+//Lot of complex samples
+
+//div[contains(text(),'Existing Counter Balance :')]//ancestor::div[3]/descendant::table/descendant::td[contains(text(),'Lead')]/ancestor::*[4]//
+
+
+
+
+//div[contains(text(),'Existing Counter Balance :')]//descendant::label[contains(text(),'Crank 1')]//ancestor::div[1]/descendant::
+
+
+table/descendant::td[contains(text(),'Lead')]/ancestor::*[4]/following-sibling::div[1]/table/descendant::td[contains(text(),'Primary')]/following-sibling::*
+
+
+
+//div[contains(text(),'Existing Counter Balance :')]/ancestor::*[1]/following-sibling::div/label[contains(text(),'Crank 1')]/ancestor::*[1]//following-sibling::*[1]
+
+
+//div[contains(text(),'Existing Counter Balance :')]/ancestor::*[1]/following-sibling::div/label[contains(text(),'Crank 1')]/ancestor::*[1]/div[1]/descendant::table/descendant::td[contains(text(),'Lead')]/ancestor::*[4]/following-sibling::div[1]/table/tbody/tr[1]
+
+
+//div[contains(text(),'Existing Counter Balance :')]/ancestor::*[1]/following-sibling::div/label[contains(text(),'Crank 2')]/ancestor::*[1]/div[1]/descendant::table/descendant::td[contains(text(),'Lead')]/ancestor::*[4]/following-sibling::div[1]/table/tbody/tr[1]
