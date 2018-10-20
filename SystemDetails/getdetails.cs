@@ -10,7 +10,7 @@ namespace SystemDiagnostics
     class Program
     {
 
-
+        public static string repeat = String.Empty;
         enum ProcessorInfo
         {
             AddressWidth,
@@ -47,7 +47,12 @@ namespace SystemDiagnostics
 
         static void GetCPUDetails()
         {
-            Console.WriteLine(" ****************** Sytem Processsor Details  ********************************");
+            
+            repeat = new String('*', 25);
+            int i = 5;
+            string D4 = i.ToString("D4");
+            Console.WriteLine(D4);
+            Console.WriteLine(repeat+ "System Processor Details"+repeat);
             string Key = "Win32_Processor";
             ManagementObjectSearcher searcher = new ManagementObjectSearcher("select * from " + Key);
             foreach (ManagementObject share in searcher.Get())
